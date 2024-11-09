@@ -21,8 +21,8 @@ header {
 }
 
 header .logo {
-    font-size: 1.8rem;
-    font-weight: bold;
+    width: 9vw;
+    
 }
 
 header nav a {
@@ -38,55 +38,144 @@ header nav a:hover {
 
 /* Hero Section */
 .hero {
-    background: url('hero-bg.jpg') no-repeat center center/cover;
-    color: #fff;
-    padding: 100px 20px;
+    /* background: url('hero-bg.jpg') no-repeat center center/cover; */
+    color: #000;
+    padding: 3vh 2vw;
     text-align: center;
+    height: 85vh;
+    
 }
 
 .hero h1 {
-    font-size: 3rem;
+    font-size: 4rem;
     margin-bottom: 10px;
 }
 
 .hero p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-bottom: 20px;
+    width: 45vw;
+    
 }
 
 .cta-buttons {
     display: flex;
-    justify-content: center;
+    justify-content: end;
 }
 
 .cta-button {
-    padding: 15px 30px;
-    border-radius: 5px;
-    margin: 5px;
+    display: flex;
+    align-items: center;
+    padding: 5px 40px;
+    border-radius: 10px;
     text-decoration: none;
     font-weight: bold;
 }
 
-.cta-button.primary {
-    background-color: #007bff;
+.cta-button.blue {
+    background-color: #3a3aea;
     color: #fff;
 }
 
-.cta-button.secondary {
-    background-color: transparent;
-    color: #007bff;
-    border: 2px solid #007bff;
+
+.img-block {
+    display: flex;
+    margin-top: 5vh;
+    gap: 1vw;
+    justify-content: center;
+}
+
+.img-ind {
+    display: flex;
+    flex-direction: row;
+    max-height: 500px;
+    height: 40vh;
+    max-width: 27.57vh;
+
+}
+
+/* Mission Section */
+.mission {
+    background: #3a3aea;
+    height: 100vh;
+    min-height: 600px;
+    padding: 50px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.figures-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0; /* Убирает промежуток между изображениями */
+    width: 30vw; /* Ширина контейнера с изображениями */
+    margin-left: 10vw;
+}
+
+.figures-container img {
+    width: 30vh; /* Каждое изображение занимает половину контейнера */
+    height: 30vh;
+}
+
+.mission-container {
+    display: flex;
+    flex-direction: column;
+    width: 45vw;
+    margin-left: auto;
+    padding-left: 20px; /* Добавляем отступ между изображениями и текстом */
+}
+
+.mission h1 {
+    color: #fff;
+    font-size: 3rem;
+    margin-right: 3vw;
+}
+
+.mission p {
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 2vh;
+}
+
+.cta-button.purple {
+    justify-content: center;
+    background-color: #c269ff;
+    color: #fff;
+    width: 11vw;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
 }
 
 /* Services Section */
 .services {
-    background: #f9f9f9;
+    display: flex;
+    background: #fff;
+    height: 100vh;
+    min-height: 600px;
     padding: 50px 20px;
-    text-align: center;
+    text-align: left;
+}
+
+/* Контейнер для текста */
+.text-container {
+    width: 50%; /* Занимает левую половину */
+    padding-right: 20px;
+    align-content: center;
+    margin-left: 5vw;
 }
 
 .services h2 {
-    font-size: 2.5rem;
+    font-size: 4.8rem;
+    margin-bottom: 10px;
+}
+
+.services h3 {
+    font-weight: bold;
+    color: #5e17eb;
+    font-size: 1.5rem;
     margin-bottom: 10px;
 }
 
@@ -94,6 +183,45 @@ header nav a:hover {
     font-size: 1.1rem;
     margin-bottom: 20px;
 }
+
+/* Кнопка */
+.cta-button.blue {
+    display: inline-block;
+    background-color: #1e90ff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.flags-container {
+    display: flex;
+    margin-top: 5vh;
+    gap: 1vw;
+}
+
+.flag {
+    width: 3vw;
+}
+
+/* Контейнер для изображений */
+.images-container {
+    width: 50%; /* Занимает правую половину */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Две колонки */
+    gap: 0; /* Убирает промежутки между изображениями */
+    align-items: start;
+}
+
+.images-container img {
+    height: 30vh;
+}
+
+/* Размещение изображений */
+.images-container img:nth-child(3) {
+    grid-column: span 1; /* Расширяем третье изображение на обе колонки */
+}
+
 
 /* Testimonials Section */
 .testimonials {
