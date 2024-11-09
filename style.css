@@ -1,0 +1,132 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* Header Styles */
+header {
+    background: #ffffff;
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+header .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+header nav a {
+    color: #000;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.cta-button {
+    padding: 15px 30px;
+    border-radius: 5px;
+    margin: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cta-button.primary {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.cta-button.secondary {
+    background-color: transparent;
+    color: #007bff;
+    border: 2px solid #007bff;
+}
+
+/* Services Section */
+.services {
+    background: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.services p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+/* Testimonials Section */
+.testimonials {
+    background: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.testimonials .testimonial {
+    margin: 20px 0;
+}
+
+/* Call to Action */
+.cta {
+    background: #333;
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.cta h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p, footer address {
+    margin: 10px 0;
+}
