@@ -223,29 +223,215 @@ header nav a:hover {
 }
 
 
-/* Testimonials Section */
-.testimonials {
+/* Accelerate Innovation Section */
+.accelerate {
+    display: flex;
     background: #fff;
+    height: 100vh;
+    min-height: 600px;
     padding: 50px 20px;
-    text-align: center;
+    text-align: left;
+
 }
 
-.testimonials .testimonial {
-    margin: 20px 0;
+/* Левая часть с заголовком и описанием */
+.left-container {
+    margin-left: 5vw;
+    width: 45vw;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-/* Call to Action */
-.cta {
-    background: #333;
-    color: #fff;
-    padding: 50px 20px;
-    text-align: center;
-}
-
-.cta h2 {
-    font-size: 2rem;
+.left-container h2 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #000;
     margin-bottom: 10px;
 }
+
+.left-container p {
+    font-size: 1.2rem;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+/* Правая часть с пунктами */
+.right-container {
+    width: 55vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2vw; /* Отступ между пунктами */
+    margin-right: 5vw;
+}
+
+.item {
+    display: flex;
+    align-items: flex-start;
+}
+
+.item img {
+    width: 4vw;
+    height: 4vw;
+    margin-right: 2vw; /* Отступ от изображения до текста */
+}
+
+.text-block h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff1495;
+    margin: 0;
+}
+
+.text-block p {
+    font-size: 1rem;
+    color: #333;
+    margin: 5px 0 0;
+}
+
+
+/* Find Out More Section */
+.fom {
+    display: flex;  
+    justify-content: center;
+    background: #fff;
+    height: 100vh;
+    min-height: 600px;
+    text-align: center;
+}
+
+.fom-content {
+    text-align: center;
+    max-width: 50vw;
+    font-size: 2rem;
+    color: #000;
+}
+
+.fom-content.button {
+    font-size: 1rem;
+}
+
+.circles-container {
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
+    margin-top: 10vh;
+}
+
+.circle {
+    width: 9vw;
+    height: 9vw;
+}
+
+
+
+
+/* How We Work Section */
+
+/* Основная секция */
+.how-we-work {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    height: 100vh;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+/* Фиксированный элемент в верхнем левом углу */
+.fixed-decoration {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18vw;
+    height: 18.7vw;
+    background: url('assets/slide-6-corner.svg') no-repeat center/cover;
+    z-index: 1;
+}
+
+/* Контейнер для текста и изображения */
+.content-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100vw;
+    z-index: 2;
+    margin-left: 10vw;
+}
+
+/* Левая часть с текстом */
+.text-content {
+    width: 40vw;
+    margin-top: 15vh;
+}
+
+.section-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.highlight {
+    position: relative;
+}
+
+/* Стиль шагов */
+.step {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.step-number {
+    width: 2vw;
+    height: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1vw;
+}
+
+.step-text h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0;
+    color: #000;
+}
+
+.step-text p {
+    font-size: 1rem;
+    color: #000;
+    margin-top: 5px;
+}
+
+/* Правая часть с изображением */
+.image-container {
+    margin-top: 16vh;
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.side-image {
+    width: 100vw;
+    max-width: 400px;
+    height: auto;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
 
 /* Footer */
 footer {
