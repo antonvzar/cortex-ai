@@ -87,19 +87,19 @@ function animateCirclesBounce() {
 }
 
 // Запуск анимации при прокрутке до секции Find Out More
-function handleScrollForBounceCircles() {
+function handleScrollBouncingCircles() {
     const section = document.querySelector('#fom');
     const sectionTop = section.getBoundingClientRect().top;
     const viewportHeight = window.innerHeight;
 
     if (sectionTop < viewportHeight && sectionTop > 0) {
         animateCirclesBounce();
-        window.removeEventListener('scroll', handleScrollForBounceCircles); // Запуск только один раз
+        window.removeEventListener('scroll', handleScrollBouncingCircles); // Запуск только один раз
     }
 }
 
 // Слушатель прокрутки для запуска анимации
-window.addEventListener('scroll', handleScrollForBounceCircles);
+window.addEventListener('scroll', handleScrollBouncingCircles);
 
 
 
@@ -138,13 +138,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (rect.top <= windowHeight && rect.bottom >= 0) {
       quoteContent.classList.add("animate");
-    } else {
-      quoteContent.classList.remove("animate"); // Убираем класс, когда элемент выходит из видимости
     }
   }
 
   window.addEventListener("scroll", handleScroll);
 });
+
+
+
+
 
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -163,3 +165,28 @@ document.addEventListener("DOMContentLoaded", function () {
   handleScroll(); // Проверка на случай, если элемент уже в видимости
 });
 
+
+// Функция для запуска анимации кружков
+function animateStatCircles() {
+    const circles = document.querySelectorAll('.small-circle-9');
+    circles.forEach((circle, index) => {
+        setTimeout(() => {
+            circle.classList.add('animate'); // Добавляем класс .animate с задержкой
+        }, index * 300); // Задержка для второго кружка
+    });
+}
+
+// Запуск анимации при прокрутке до секции #sign-up
+function handleScrollStatCircles() {
+    const section = document.querySelector('#sign-up');
+    const sectionTop = section.getBoundingClientRect().top;
+    const viewportHeight = window.innerHeight;
+
+    if (sectionTop < viewportHeight && sectionTop > 0) {
+        animateStatCircles();
+        window.removeEventListener('scroll', handleScrollStatCircles); // Запуск только один раз
+    }
+}
+
+// Слушатель прокрутки для запуска анимации
+window.addEventListener('scroll', handleScrollStatCircles);
